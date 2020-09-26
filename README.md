@@ -36,6 +36,8 @@ Make sure to to maintain the hierarchy as such given in the repository (/Resourc
       
     f. Registeration page can add user email address for User convenience - test failed
     
+    g. Login Page post Registeration- Test passed
+    
     
  2. Login Page Test
  
@@ -47,6 +49,17 @@ Make sure to to maintain the hierarchy as such given in the repository (/Resourc
     
     - UI should have a link 'Forgot Password ' to provide user a link to change his/her password based on the registered email or phone number - Test failed as UI is not having this intelligence built in the page
     
+    
+ 3. Cross Page Test
+    
+    a. Link to back to the home page test - Test passed
+ 
+ 4. Cross Browser Test
+ 
+ 
+ 5. UI Look and Feel Test
+ 
+ 
     
     
 
