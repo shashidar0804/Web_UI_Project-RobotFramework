@@ -11,3 +11,10 @@ Library - SeleniumLibrary
 # Test cases Tested
 1. User must register before login
 2. User Login
+
+# How to run the Test
+robot -d results Tests/UI_Test.robot
+
+Make sure to to maintain the hierarchy as such given in the repository (/Resources. /Tests. /Results. )
+
+
