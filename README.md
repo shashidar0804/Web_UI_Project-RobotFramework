@@ -54,10 +54,12 @@ Make sure to to maintain the hierarchy as such given in the repository (/Resourc
     
     a. Link to back to the home page test - Test passed
  
- 4. Cross Browser Test
  
  
- 5. UI Look and Feel Test
+ 
+ 4. UI Look and Feel Test
+ 
+    a. Look and feel is pretty much normal and can be more user attention gaining experience by having some good styling features, images and other styling features
  
  
     
