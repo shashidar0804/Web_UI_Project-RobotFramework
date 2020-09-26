@@ -8,3 +8,6 @@ RobotFramework - Robot Framework 3.2.2
 Library - SeleniumLibrary
 
 
+# Test cases Tested
+1. User must register before login
+2. User Login
