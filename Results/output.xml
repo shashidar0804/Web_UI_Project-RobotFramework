@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200926 15:43:53.660" generator="Robot 3.2.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/shashidharjayarama/PycharmProjects/Robot_Projects/UI_Project/UI_Robot_Project/Tests/UI_Test.robot" id="s1" name="UI Test">
+<test id="s1-t1" name="User must register before login">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200926 15:43:53.955" level="INFO">Opening browser 'safari' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20200926 15:43:56.239" starttime="20200926 15:43:53.954"></status>
+</kw>
+<status status="PASS" endtime="20200926 15:43:56.239" starttime="20200926 15:43:53.954"></status>
+</kw>
+<kw name="User must register before login" library="UI_Keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200926 15:43:56.241" level="INFO">Opening url 'http://0.0.0.0:8080/'</msg>
+<status status="PASS" endtime="20200926 15:43:56.297" starttime="20200926 15:43:56.240"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200926 15:43:56.304" starttime="20200926 15:43:56.297"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Demo app</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:43:56.326" starttime="20200926 15:43:56.304"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.329" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200926 15:44:01.329" starttime="20200926 15:43:56.326"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/nav/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.331" level="INFO">Clicking link 'xpath=/html/body/nav/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.364" starttime="20200926 15:44:01.330"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:44:01.418" starttime="20200926 15:44:01.365"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>pqx</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.418" level="INFO">Typing text 'pqx' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.503" starttime="20200926 15:44:01.418"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>abc</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.504" level="INFO">Typing text 'abc' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.564" starttime="20200926 15:44:01.504"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=firstname</arg>
+<arg>dummy</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.565" level="INFO">Typing text 'dummy' into text field 'id=firstname'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.622" starttime="20200926 15:44:01.564"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=lastname</arg>
+<arg>dummy</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.623" level="INFO">Typing text 'dummy' into text field 'id=lastname'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.705" starttime="20200926 15:44:01.623"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=phone</arg>
+<arg>abc</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.706" level="INFO">Typing text 'abc' into text field 'id=phone'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.747" starttime="20200926 15:44:01.706"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/shashidharjayarama/PycharmProjects/Robot_Projects/UI_Project/UI_Robot_Project/Results/Register.png</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.823" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Register.png"&gt;&lt;img src="../Results/Register.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200926 15:44:01.823" starttime="20200926 15:44:01.747"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/section/form/input[6]</arg>
+</arguments>
+<msg timestamp="20200926 15:44:01.823" level="INFO">Clicking button 'xpath=/html/body/section/form/input[6]'.</msg>
+<status status="PASS" endtime="20200926 15:44:01.869" starttime="20200926 15:44:01.823"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200926 15:44:06.871" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200926 15:44:06.871" starttime="20200926 15:44:01.869"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/shashidharjayarama/PycharmProjects/Robot_Projects/UI_Project/UI_Robot_Project/Results/Register_Results.png</arg>
+</arguments>
+<msg timestamp="20200926 15:44:06.958" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Register_Results.png"&gt;&lt;img src="../Results/Register_Results.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200926 15:44:06.958" starttime="20200926 15:44:06.872"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:44:06.963" starttime="20200926 15:44:06.958"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/nav/h1/a</arg>
+</arguments>
+<msg timestamp="20200926 15:44:06.964" level="INFO">Clicking link 'xpath=/html/body/nav/h1/a'.</msg>
+<status status="PASS" endtime="20200926 15:44:06.980" starttime="20200926 15:44:06.963"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Demo app</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:44:07.016" starttime="20200926 15:44:06.980"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200926 15:44:12.020" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200926 15:44:12.020" starttime="20200926 15:44:07.017"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200926 15:44:12.046" starttime="20200926 15:44:12.020"></status>
+</kw>
+<status status="PASS" endtime="20200926 15:44:12.047" starttime="20200926 15:43:56.240"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200926 15:44:12.049" starttime="20200926 15:44:12.049"></status>
+</kw>
+<status status="PASS" endtime="20200926 15:44:12.049" starttime="20200926 15:44:12.048"></status>
+</kw>
+<doc>This is User Registeration Testcase</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20200926 15:44:12.050" critical="yes" starttime="20200926 15:43:53.953"></status>
+</test>
+<test id="s1-t2" name="User Login">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200926 15:44:12.053" level="INFO">Opening browser 'safari' to base url 'about:blank'.</msg>
+<status status="PASS" endtime="20200926 15:44:13.603" starttime="20200926 15:44:12.053"></status>
+</kw>
+<status status="PASS" endtime="20200926 15:44:13.604" starttime="20200926 15:44:12.052"></status>
+</kw>
+<kw name="User Login and Info" library="UI_Keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200926 15:44:13.606" level="INFO">Opening url 'http://0.0.0.0:8080/'</msg>
+<status status="PASS" endtime="20200926 15:44:13.642" starttime="20200926 15:44:13.606"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200926 15:44:13.689" starttime="20200926 15:44:13.643"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200926 15:44:18.690" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200926 15:44:18.691" starttime="20200926 15:44:13.689"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/nav/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20200926 15:44:18.692" level="INFO">Clicking link 'xpath=/html/body/nav/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20200926 15:44:18.730" starttime="20200926 15:44:18.691"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:44:18.787" starttime="20200926 15:44:18.730"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>pqx</arg>
+</arguments>
+<msg timestamp="20200926 15:44:18.788" level="INFO">Typing text 'pqx' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20200926 15:44:18.874" starttime="20200926 15:44:18.787"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>abc</arg>
+</arguments>
+<msg timestamp="20200926 15:44:18.874" level="INFO">Typing text 'abc' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20200926 15:44:18.912" starttime="20200926 15:44:18.874"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/section/form/input[3]</arg>
+</arguments>
+<msg timestamp="20200926 15:44:18.912" level="INFO">Clicking button 'xpath=/html/body/section/form/input[3]'.</msg>
+<status status="PASS" endtime="20200926 15:44:18.951" starttime="20200926 15:44:18.912"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/shashidharjayarama/PycharmProjects/Robot_Projects/UI_Project/UI_Robot_Project/Results/Userinfo.png</arg>
+</arguments>
+<msg timestamp="20200926 15:44:19.031" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Userinfo.png"&gt;&lt;img src="../Results/Userinfo.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200926 15:44:19.031" starttime="20200926 15:44:18.952"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>User Information</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:44:19.252" starttime="20200926 15:44:19.031"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/shashidharjayarama/PycharmProjects/Robot_Projects/UI_Project/UI_Robot_Project/Results/Userinfo.png</arg>
+</arguments>
+<msg timestamp="20200926 15:44:19.328" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Userinfo.png"&gt;&lt;img src="../Results/Userinfo.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200926 15:44:19.328" starttime="20200926 15:44:19.252"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/nav/h1/a</arg>
+</arguments>
+<msg timestamp="20200926 15:44:19.328" level="INFO">Clicking link 'xpath=/html/body/nav/h1/a'.</msg>
+<status status="PASS" endtime="20200926 15:44:19.345" starttime="20200926 15:44:19.328"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Demo app</arg>
+</arguments>
+<status status="PASS" endtime="20200926 15:44:19.376" starttime="20200926 15:44:19.345"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20200926 15:44:29.378" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200926 15:44:29.379" starttime="20200926 15:44:19.377"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200926 15:44:29.395" starttime="20200926 15:44:29.379"></status>
+</kw>
+<status status="PASS" endtime="20200926 15:44:29.396" starttime="20200926 15:44:13.605"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200926 15:44:29.397" starttime="20200926 15:44:29.397"></status>
+</kw>
+<status status="PASS" endtime="20200926 15:44:29.397" starttime="20200926 15:44:29.396"></status>
+</kw>
+<doc>This is User Login Testcase</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20200926 15:44:29.397" critical="yes" starttime="20200926 15:44:12.051"></status>
+</test>
+<doc>This is the main test script which has all the Testcases for the Web API Test</doc>
+<status status="PASS" endtime="20200926 15:44:29.398" starttime="20200926 15:43:53.664"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="2">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="UI Test" pass="2">UI Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
