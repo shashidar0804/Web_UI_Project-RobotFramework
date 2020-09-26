@@ -20,7 +20,7 @@ Make sure to to maintain the hierarchy as such given in the repository (/Resourc
 
 # Negative Testcases Tested :
 
-1.Registeration page Test 
+1. Registeration page Test 
 
     a. Registering with the user already avaialble - Passed (UI is throwing an erroor saying user already registered . Screenshot provided in the results)
     
